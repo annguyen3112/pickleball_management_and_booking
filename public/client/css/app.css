@@ -1,0 +1,201 @@
+:root {
+    --background: #198754;
+    --header-bg: #8DA49A;
+    --header-bg-scrolled: #6e857e;
+    --highlight: #d4ffae;
+    --hover-color: #3eb9fc;
+    --footer-bg: #2c3e50;
+}
+
+body {
+    font-family: 'Segoe UI', sans-serif;
+    background-color: #f5f7f8;
+    scroll-behavior: smooth;
+}
+
+a {
+    transition: color 0.3s ease;
+}
+
+a:hover {
+    color: var(--hover-color);
+}
+
+#header {
+    background: var(--header-bg);
+    border-radius: 40px;
+    margin: 10px auto;
+    max-width: 95%;
+    padding: 10px 30px;
+    transition: all 0.3s ease-in-out;
+    z-index: 999;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+}
+
+#header.header-scrolled {
+    background: var(--header-bg-scrolled);
+}
+
+.navbar .nav-link {
+    color: white;
+    font-weight: 500;
+    padding: 10px 15px;
+    transition: all 0.3s ease;
+}
+
+.navbar .nav-link:hover,
+.navbar .nav-link.active {
+    color: var(--highlight);
+    text-shadow: 0 0 6px rgba(255, 255, 255, 0.4); 
+}
+
+
+.navbar .dropdown-menu {
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.1);
+}
+
+.dropdown-item {
+    color: #333;
+    font-weight: 500;
+}
+
+.dropdown-item:hover {
+    background-color: #f1f1f1;
+    color: var(--background);
+}
+
+.dropdown-item i {
+    font-size: 18px !important;
+    margin-right: 10px !important;
+}
+
+.getstarted,
+.btn-outline-light {
+    padding: 8px 20px;
+    border-radius: 25px;
+    border: 1px solid white;
+    background-color: transparent;
+    color: white;
+    font-weight: 500;
+    transition: all 0.3s ease;
+}
+
+.getstarted:hover,
+.btn-outline-light:hover {
+    background-color: var(--highlight);
+    color: #333;
+    border-color: var(--highlight);
+}
+
+#footer {
+    background: var(--footer-bg);
+    border-top: 4px solid var(--header-bg);
+    padding-top: 40px;
+    color: #333;
+}
+
+#footer h5, #footer h4 {
+    color: var(--background);
+    font-weight: bold;
+}
+
+#footer a {
+    color: #ccc;
+    transition: color 0.3s;
+}
+
+#footer a:hover {
+    color: white;
+    text-decoration: underline;
+}
+
+
+#footer .social-links a {
+    background-color: #3b4d5c;
+    color: #ffffff;
+}
+
+#footer .social-links a:hover {
+    background-color: var(--highlight);
+    color: #333;
+}
+
+#hero {
+    background: var(--background);
+    color: white;
+}
+
+.error {
+    display: none;
+}
+
+.error.error-show {
+    display: block;
+
+
+}
+
+.btn-block {
+    width: 100%;
+}
+
+.auth-title {
+    text-align: center;
+    font-weight: bold;
+    text-transform: uppercase;
+    font-size: 1.5rem;
+    margin-bottom: 20px;
+}
+
+#profile-overview .label {
+    color: #37517e;
+    font-weight: bold;
+}
+
+.custom-input {
+    width: auto !important;
+    display: inline !important;
+}
+
+.input-group .quantity-input {
+    width: 40px !important;
+    padding: 5px;
+    text-align: center;
+    font-size: 14px;
+}
+
+.input-group .btn {
+    padding: 5px 10px;
+    font-size: 14px;
+}
+.custom-btn {
+    color: #000;
+    transition: all 0.3s ease;
+}
+
+.custom-btn-outline {
+    color: #fff;
+    border-color: #fff;
+    transition: all 0.3s ease;
+}
+
+.custom-btn-outline:hover {
+    background-color: #fff;
+    color: #000;
+    border-color: #fff;
+}
+@media (max-width: 767.98px) {
+    #navbar {
+        background-color: white !important;
+    }
+
+    #navbar .nav-link {
+        color: #333 !important;
+    }
+
+    #navbar .nav-link:hover {
+        color: var(--hover-color) !important;
+    }
+}
